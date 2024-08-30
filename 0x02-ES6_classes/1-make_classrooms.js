@@ -1,8 +1,9 @@
-function initializeRooms() {
+import ClassRoom from './0-classroom';
+
+export default function initializeRooms() {
     return [
-        `ClassRoom { _maxStudentsSize: ${new ClassRoom(19)._maxStudentsSize}}`,
-        `ClassRoom { _maxStudentsSize: ${new ClassRoom(20)._maxStudentsSize}}`,
-        `ClassRoom { _maxStudentsSize: ${new ClassRoom(34)._maxStudentsSize}}`
+        new ClassRoom(19),
+        new ClassRoom(20),
+        new ClassRoom(34)
     ];
 }
-console.log(initializeRooms());
