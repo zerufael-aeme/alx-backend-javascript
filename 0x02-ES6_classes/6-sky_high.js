@@ -2,16 +2,8 @@ import Building from './5-building.js';
 
 export default class SkyHighBuilding extends Building {
   constructor(sqft, floors) {
-    this._sqft = sqft;
+    super(sqft);
     this._floors = floors;
-  }
-
-  get sqft() {
-    return this._sqft;
-  }
-
-  set sqft(value) {
-    this._sqft = value;
   }
 
   get floors() {
