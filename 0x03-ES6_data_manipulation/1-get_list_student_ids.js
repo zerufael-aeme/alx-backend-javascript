@@ -3,5 +3,5 @@ export default function getListStudentIds(listOfStudents) {
     return [];
   }
 
-  return listOfStudents.map(student => {student.id});
+  return listOfStudents.map((student) => student.id);
 }
